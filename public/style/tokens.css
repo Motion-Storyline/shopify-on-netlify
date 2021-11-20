@@ -1,0 +1,24 @@
+:root {
+    --font-body-family: Assistant, sans-serif;
+    --font-body-style: normal;
+    --font-body-weight: 400;
+    --font-heading-family: Assistant, sans-serif;
+    --font-heading-style: normal;
+    --font-heading-weight: 400;
+    --font-body-scale: 1.0;
+    --font-heading-scale: 1.0;
+    --color-base-text: 18, 18, 18;
+    --color-base-background-1: 255, 255, 255;
+    --color-base-background-2: 243, 243, 243;
+    --color-base-solid-button-labels: 255, 255, 255;
+    --color-base-outline-button-labels: 18, 18, 18;
+    --color-base-accent-1: 18, 18, 18;
+    --color-base-accent-2: 51, 79, 180;
+    --payment-terms-background-color: #FFFFFF;
+    --gradient-base-background-1: #FFFFFF;
+    --gradient-base-background-2: #F3F3F3;
+    --gradient-base-accent-1: #121212;
+    --gradient-base-accent-2: #334FB4;
+    --page-width: 160rem;
+    --page-width-margin: 2rem;
+}

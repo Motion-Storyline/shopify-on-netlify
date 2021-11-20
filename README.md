@@ -1,5 +1,7 @@
 # Shopify + Astro + React
 
+This project is (open source on GitHub)[https://github.com/cassidoo/shopify-react-astro], hosted with (Netlify)[https://bit.ly/2G29YwK], built with (Astro)[https://astro.build/] and made with 💚 by Cassidy Williams (@cassidoo)[https://twitter.com/cassidoo]
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/00c79ab2-364d-4c1d-923b-ed0a9a3b4d2b/deploy-status)](https://app.netlify.com/sites/shopify-astro/deploys)
 
 A demo of a Shopify site using [Astro](https://astro.build) and React. If you'd like to learn how it's built and how you can do the same, [check out this blog post](https://dev.to/netlify/build-a-modern-shopping-site-with-astro-and-serverless-functions-5326)!

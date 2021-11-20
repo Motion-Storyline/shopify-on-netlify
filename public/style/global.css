@@ -6,7 +6,7 @@
 }
 body,
 html {
-  font-family: Nanum Gothic, Montserrat, -apple-system, BlinkMacSystemFont,
+  font-family: Assistant, Nanum Gothic, Montserrat, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -306,10 +306,9 @@ input {
   display: flex;
 }
 main {
-  margin: 30px 0 45px;
+  margin: 3rem 3rem;
 }
 .product-grid {
-  max-width: 60vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -324,21 +323,20 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .product-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1280px) {
   .product-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .product-card {
   max-height: 500px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  margin: 20px 0;
 }
 .product-card-description {
   margin-top: 0;
@@ -350,17 +348,15 @@ main {
   -webkit-line-clamp: 2;
 }
 .product-card-frame {
-  height: 120px;
+  min-height: 120px;
   margin-bottom: 0.5rem;
   display: flex;
-  align-content: center;
+  align-content: flex-start;
   align-items: center;
-  border-radius: 10px;
   overflow: hidden;
 }
 .product-card-frame img {
   width: 100%;
-  border-radius: 10px;
   -o-object-fit: cover;
   object-fit: cover;
   height: 100%;

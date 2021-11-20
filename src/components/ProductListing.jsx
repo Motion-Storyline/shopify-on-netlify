@@ -5,16 +5,16 @@ export default function ProductListing({ product }) {
   return (
     <li className="product-card">
       <div className="product-card-frame">
-        <img className="prodimg" src={image.src} alt={image.altText} />
+        <img src={image.src} alt={image.altText} />
       </div>
       <div className="product-card-text">
-        <h3 className="product-card-title">{product.title}</h3>
         <p className="product-card-description">
-          {product.description.substring(0, 60)}...
+          {product.description.substring(0, 180)}
+          {product.description.length > 180 && <span>...</span>}
         </p>
       </div>
       <a href={`/product/${product.handle}`}>
-        <button>View Item {`>`}</button>
+        <button>{product.title}</button>
       </a>
     </li>
   );
