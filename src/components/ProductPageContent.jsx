@@ -30,16 +30,18 @@ function VariantForm({ vars, current, pick, setQ }) {
             </div>
           );
         })}
-      <input
-        type="number"
-        placeholder="Quantity"
-        defaultValue={1}
-        min={1}
-        max={getCurrentVariantObject(vars, current).node.quantityAvailable}
-        onChange={(e) => {
-          setQ(parseInt(e.target.value));
-        }}
-      />
+      { getCurrentVariantObject(vars, current).node.quantityAvailable > 0 &&
+        <input
+          type="number"
+          placeholder="Quantity"
+          defaultValue={1}
+          min={1}
+          max={getCurrentVariantObject(vars, current).node.quantityAvailable}
+          onChange={(e) => {
+            setQ(parseInt(e.target.value));
+          }}
+        />
+      }
     </form>
   );
 }
@@ -99,7 +101,9 @@ export default function ProductPageContent({ product }) {
       </div>
       <div className="product-copy">
         <h1>{product.title}</h1>
-        <h2>{cost}</h2>
+        { product.availableForSale && 
+          <h2>{cost}</h2>
+        }
         <p>{product.description}</p>
 
         <VariantForm
@@ -109,9 +113,9 @@ export default function ProductPageContent({ product }) {
           setQ={setQuantity}
         />
 
-        {product.totalInventory > 0 ? (
+        { product.totalInventory > 0 ? (
           <button onClick={handleAddToCart}>Add to Cart</button>
-        ) : (
+        ) : ( product.availableForSale &&
           <button className="disabled" disabled>
             Out of Stock
           </button>

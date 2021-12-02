@@ -49,7 +49,7 @@ export default function Cart() {
         </div>
       ) : (
         <div className="cart-page-message">
-          No products to show! Get shopping!
+          Nothing in your cart.
         </div>
       )}
     </div>
