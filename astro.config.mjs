@@ -1,7 +1,7 @@
 export default {
   // projectRoot: './dist',
   buildOptions: {
-    site: 'https://simpleproduct.page/shop/',
+    site: 'https://simpleproduct.page/',
   },
   renderers: ['@astrojs/renderer-react'],
 };
