@@ -13,8 +13,9 @@ A demo of a Shopify site using [Astro](https://astro.build) and React. If you'd 
 Clicking this button will clone the repo to your GitHub account and instantly deploy to Netlify. You will need to have the [Netlify CLI](https://cli.netlify.com/) installed, and a `.env` file at the top level of your project (after you clone) with the following:
 
 ```bash
-SHOPIFY_STOREFRONT_API_TOKEN=example
-SHOPIFY_API_ENDPOINT=https://exampleshopify/graphql.json
+SHOPIFY_STOREFRONT_API_TOKEN=09123785q9gvdshaksd87w
+// Note: the above token is fake and just for example purposes
+SHOPIFY_API_ENDPOINT=https://example.myshopify.com/api/2021-10/graphql.json
 ```
 
 ## Commands
