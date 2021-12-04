@@ -29,6 +29,7 @@ exports.handler = async (event) => {
             id
             handle
             description
+            descriptionHtml
             title
             totalInventory
             variants(first: 5) {
@@ -36,6 +37,8 @@ exports.handler = async (event) => {
                 node {
                   id
                   title
+                  description
+                  descriptionHtml
                   quantityAvailable
                   priceV2 {
                     amount

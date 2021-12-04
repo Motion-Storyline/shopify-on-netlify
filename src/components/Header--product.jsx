@@ -10,10 +10,10 @@ export default function Header() {
             <a href="/">Home</a>
           </li>
           <li className="main-nav-item">
-            <a href="../all">All Templates</a>
+            <a href="../../all">All Templates</a>
           </li>
           <li className="main-nav-item">
-            <a href="../cart">Cart</a>
+            <a href="../../cart">Cart</a>
           </li>
         </ul>
       </nav>

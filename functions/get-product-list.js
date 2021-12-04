@@ -31,6 +31,7 @@ exports.handler = async () => {
                 id
                 handle
                 description
+                descriptionHtml
                 title
                 totalInventory
                 variants(first: 5) {

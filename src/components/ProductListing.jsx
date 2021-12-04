@@ -13,7 +13,7 @@ export default function ProductListing({ product }) {
           {product.description.length > 180 && <span>...</span>}
         </p>
       </div>
-      <a href={`/product/${product.handle}`}>
+      <a href={`../product/${product.handle}`}>
         <button>{product.title}</button>
       </a>
     </li>

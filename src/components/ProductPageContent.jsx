@@ -104,7 +104,7 @@ export default function ProductPageContent({ product }) {
         { product.availableForSale && 
           <h2>{cost}</h2>
         }
-        <p>{product.description}</p>
+        <div dangerouslySetInnerHTML={{__html: product.descriptionHtml}} />
 
         <VariantForm
           vars={vars}
